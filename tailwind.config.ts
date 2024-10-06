@@ -11,6 +11,9 @@ const config: Config = {
       maxWidth: {
         header: "1400px",
       },
+      fontSize: {
+        "10xl": "12rem",
+      },
       colors: {
         primary1: "#147487",
         primary2: "#0A3A44",
