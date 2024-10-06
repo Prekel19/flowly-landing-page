@@ -8,9 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        header: "1400px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary1: "#147487",
+        primary2: "#0A3A44",
+        secondary1: "#A9D5DD",
+        secondary2: "#F7F7F7",
+        accent1: "#C9E8FF",
+        accent2: "#B2D1E6",
+      },
+      fontFamily: {
+        inter: "var(--font-inter)",
+        stix: "var(--font-stix)",
+        noto: "var(--font-noto)",
       },
     },
   },
