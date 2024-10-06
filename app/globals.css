@@ -11,6 +11,17 @@ body {
   color: #222222;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* MENU */
 .menu-item {
   background: linear-gradient(to right, #147487 50%, #222222 50%);
   transition: background-position 350ms ease;
@@ -22,4 +33,37 @@ body {
 
 .menu-item:hover {
   background-position: 0 100%;
+}
+
+/* HERO SLIDER */
+.hero-slider {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 1000px;
+}
+
+.hero-slider:hover .slider-container {
+  animation-play-state: paused;
+}
+
+.slider-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  animation: slide 25s infinite linear;
+}
+
+.slide img:hover {
+  scale: 1;
+}
+
+.slide img {
+  max-width: unset;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  margin: 0 .5rem;
+  scale: .975;
+  transition: all .3s ease;
 }

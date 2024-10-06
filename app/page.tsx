@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeroSection from "./components/HeroSection";
 import logo from "./assets/logo.png";
 
 export default function Home() {
@@ -47,7 +48,9 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <main></main>
+      <main>
+        <HeroSection></HeroSection>
+      </main>
     </>
   );
 }
