@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
+import Features from "./components/Features";
 import logo from "./assets/logo.png";
 
 export default function Home() {
@@ -20,14 +21,14 @@ export default function Home() {
 
   return (
     <>
-      <header className="flex max-w-header justify-between font-noto leading-normal py-8 px-12 mx-auto">
+      <header className="flex max-w-normal justify-between font-noto leading-normal py-8 px-12 mx-auto">
         <div className="flex items-center gap-12">
           <Image src={logo} alt="Flowly logo" priority />
           <ul className="flex gap-8">
             {tabs.map((tab) => {
               return (
                 <li key={tab.id} className="text-base font-semibold menu-item">
-                  <a href="#">{tab.name}</a>
+                  <a href={`#${tab.name.toLocaleLowerCase()}`}>{tab.name}</a>
                 </li>
               );
             })}
@@ -50,6 +51,7 @@ export default function Home() {
       </header>
       <main>
         <HeroSection></HeroSection>
+        <Features></Features>
       </main>
     </>
   );

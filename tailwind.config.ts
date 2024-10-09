@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        header: "1600px",
+        normal: "1600px",
       },
       fontSize: {
         "10xl": "12rem",
