@@ -70,7 +70,7 @@ export default function Home() {
       <footer className="flex flex-col pt-12">
         <Image src={layeredWavesFooter} alt="Layered waves footer" />
         <div className="flex flex-col items-center bg-accent2 px-24 pt-8 pb-10 max-sm:px-6 max-sm:pt-8 max-sm:pb-8">
-          <a href="#" className="flex items-center">
+          <a href="https://github.com/Prekel19" className="flex items-center">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"

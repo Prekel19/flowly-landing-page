@@ -27,9 +27,9 @@ export default function MobileMenu() {
   return (
     <>
       <div className="hidden max-md:flex items-center">
-        <button onClick={toggleMenu} className="flex justify-center items-center h-7 w-7">
+        <div onClick={toggleMenu} className="flex justify-center items-center h-7 w-7">
           <Bars3Icon />
-        </button>
+        </div>
       </div>
       <div
         className={`hidden max-md:flex flex-col items-center bg-secondary2 fixed top-0 left-0 h-full w-1/2 max-sm:w-3/5 ${

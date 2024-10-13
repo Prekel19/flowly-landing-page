@@ -140,6 +140,11 @@ body {
     font-size: 14px;
   }
 
+  /* HERO SLIDER */
+  .slider-container {
+    animation-duration: 25s;
+  }
+
   .slide img {
     height: 200px;
     width: 200px;
