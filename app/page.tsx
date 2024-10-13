@@ -1,6 +1,8 @@
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
+import StepsSection from "./components/StepsSection";
+import Testimonials from "./components/Testimonials";
 import logo from "./assets/logo.png";
 
 export default function Home() {
@@ -52,6 +54,8 @@ export default function Home() {
       <main>
         <HeroSection></HeroSection>
         <Features></Features>
+        <StepsSection></StepsSection>
+        <Testimonials></Testimonials>
       </main>
     </>
   );

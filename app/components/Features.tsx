@@ -28,7 +28,10 @@ export default function Features() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-12 px-16 max-w-normal mx-auto" id="features">
+    <div
+      className="grid grid-cols-2 gap-12 px-16 max-w-normal mx-auto mb-32"
+      id="features"
+    >
       <div className="flex flex-col gap-6">
         {features.map((feature) => {
           return (

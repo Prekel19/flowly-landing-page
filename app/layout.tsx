@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans, STIX_Two_Text } from "next/font/google";
+import { Noto_Sans, STIX_Two_Text } from "next/font/google";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
   variable: "--font-noto",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
   display: "swap",
 });
 
@@ -32,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body
-        className={`${inter.variable} ${stixTwoText.variable} ${notoSans.variable} antialiased`}
-      >
+      <body className={`${stixTwoText.variable} ${notoSans.variable} antialiased`}>
         {children}
       </body>
     </html>

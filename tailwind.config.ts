@@ -23,7 +23,6 @@ const config: Config = {
         accent2: "#B2D1E6",
       },
       fontFamily: {
-        inter: "var(--font-inter)",
         stix: "var(--font-stix)",
         noto: "var(--font-noto)",
       },
