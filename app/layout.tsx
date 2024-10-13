@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${stixTwoText.variable} ${notoSans.variable} antialiased`}>
+      <body
+        className={`${stixTwoText.variable} ${notoSans.variable} antialiased relative`}
+      >
         {children}
       </body>
     </html>

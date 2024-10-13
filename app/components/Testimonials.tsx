@@ -34,22 +34,27 @@ export default function Testimonials() {
   ];
 
   return (
-    <div id="testimonials" className="flex flex-col max-w-normal px-16 pt-20 mx-auto">
+    <div
+      id="testimonials"
+      className="flex flex-col gap-10 max-w-normal px-16 pt-20 mx-auto max-sm:px-6"
+    >
       <div className="flex flex-col items-center">
-        <h2 className="font-stix text-3xl">Testimonials</h2>
-        <p>See what our users have to say about our task manager.</p>
+        <h2 className="font-stix text-3xl font-semibold">Testimonials</h2>
+        <p className="font-noto text-center">
+          See what our users have to say about our task manager.
+        </p>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
         {opinions.map((opinion) => {
           return (
-            <div key={opinion.id} className="relative">
-              <div className="absolute w-full h-full bg-accent2 top-0 left-0 z-10"></div>
-              <div className="relative w-full h-full bg-accent1 px-10 py-6 z-20">
+            <div key={opinion.id} className="relative opinions-container">
+              <div className="absolute w-full h-full bg-accent2 top-0 left-0 z-10 opinion-bg"></div>
+              <div className="flex flex-col gap-4 relative w-full h-full bg-accent1 px-10 py-6 z-20 opinion-item">
                 <div className="flex flex-col">
-                  <p>{opinion.userName}</p>
-                  <span>{opinion.userJob}</span>
+                  <p className="font-noto text-lg font-semibold">{opinion.userName}</p>
+                  <span className="font-noto">{opinion.userJob}</span>
                 </div>
-                <p>{opinion.description}</p>
+                <p className="font-noto">{opinion.description}</p>
               </div>
             </div>
           );

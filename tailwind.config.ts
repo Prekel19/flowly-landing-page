@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       maxWidth: {
         normal: "1600px",
+        "90%": "90%",
+        "75%": "75%",
+        "40%": "40%",
       },
       fontSize: {
         "10xl": "12rem",
@@ -25,6 +28,11 @@ const config: Config = {
       fontFamily: {
         stix: "var(--font-stix)",
         noto: "var(--font-noto)",
+      },
+      screens: {
+        "max-sm": { max: "480px" },
+        "max-md": { max: "768px" },
+        "max-lg": { max: "991px" },
       },
     },
   },

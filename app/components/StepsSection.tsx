@@ -25,13 +25,13 @@ export default function StepsSection() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-12 px-16 max-w-normal mx-auto">
+    <div className="grid grid-cols-2 gap-12 px-16 max-w-normal mx-auto max-md:flex max-md:flex-col max-sm:px-6">
       <div className="relative">
         <div className="flex flex-col gap-6 sticky top-10">
-          <h2 className="font-stix text-3xl font-semibold">
+          <h2 className="font-stix text-3xl font-semibold text-center">
             Discover the power of our product
           </h2>
-          <p className="font-noto">
+          <p className="font-noto text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
             enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
             dolor interdum nulla, ut commodo diam libero vitae erat.

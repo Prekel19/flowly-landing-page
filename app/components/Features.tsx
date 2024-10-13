@@ -29,7 +29,7 @@ export default function Features() {
 
   return (
     <div
-      className="grid grid-cols-2 gap-12 px-16 max-w-normal mx-auto mb-32"
+      className="grid grid-cols-2 gap-12 pt-20 px-16 max-w-normal mx-auto mb-32 max-md:flex max-md:flex-col-reverse max-sm:px-6"
       id="features"
     >
       <div className="flex flex-col gap-6">

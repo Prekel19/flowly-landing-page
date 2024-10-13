@@ -14,7 +14,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #A9D5DD;
+  background: #B2D1E6;
 }
 
 @keyframes slide {
@@ -48,7 +48,6 @@ body {
   display: flex;
   overflow: hidden;
   position: relative;
-  margin-bottom: 5rem;
 }
 
 .hero-slider::before,
@@ -93,4 +92,56 @@ body {
   margin: 0 .125rem;
   scale: .975;
   transition: all .3s ease;
+}
+
+/* TESTIMONIALS */
+.opinions-container>.opinion-bg,
+.opinions-container>.opinion-item {
+  transition: all .2s ease;
+}
+
+
+.opinions-container:hover>.opinion-bg {
+  rotate: 2deg;
+}
+
+.opinions-container:hover>.opinion-item {
+  rotate: -2deg;
+}
+
+/* RWD */
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .slide img {
+    height: 200px;
+    width: 200px;
+  }
 }
