@@ -1,6 +1,6 @@
 "use client";
 
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 export default function MobileMenu() {
@@ -28,7 +28,20 @@ export default function MobileMenu() {
     <>
       <div className="hidden max-md:flex items-center">
         <div onClick={toggleMenu} className="flex justify-center items-center h-7 w-7">
-          <Bars3Icon />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke={isActive ? "#147487" : "#000000"}
+            className="size-7 transition duration-200"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </div>
       </div>
       <div

@@ -80,10 +80,6 @@ body {
   animation: slide 15s infinite linear;
 }
 
-.slide img:hover {
-  scale: 1;
-}
-
 .slide img {
   max-width: unset;
   height: 400px;
@@ -92,6 +88,10 @@ body {
   margin: 0 .125rem;
   scale: .975;
   transition: all .3s ease;
+}
+
+.slide img:hover {
+  scale: 1;
 }
 
 /* TESTIMONIALS */
@@ -141,6 +141,11 @@ body {
   }
 
   /* HERO SLIDER */
+
+  .hero-slider:hover .slider-container {
+    animation-play-state: unset;
+  }
+
   .slider-container {
     animation-duration: 25s;
   }
@@ -148,5 +153,9 @@ body {
   .slide img {
     height: 200px;
     width: 200px;
+  }
+
+  .slide img:hover {
+    scale: .975;
   }
 }
