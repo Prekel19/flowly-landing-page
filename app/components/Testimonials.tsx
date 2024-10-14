@@ -44,7 +44,7 @@ export default function Testimonials() {
           Użytkownicy chwalą nasz menedżer zadań za jego funkcjonalność i łatwość obsługi.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+      <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-sm:gap-8">
         {opinions.map((opinion) => {
           return (
             <div key={opinion.id} className="relative opinions-container">

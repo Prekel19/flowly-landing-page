@@ -62,10 +62,16 @@ export default function Home() {
           </a>
         </div>
         <a
-          href="#"
-          className="flex items-center gap-1 font-noto text-sm font-light absolute top-2 right-4"
+          href="https://flowly-eng.vercel.app"
+          className="flex items-center gap-1 font-noto text-sm font-light absolute top-2 right-4 max-lg:top-1 max-lg:right-3 max-md:hidden"
         >
-          <Image src={gbFlag} alt="Flag of Great Britain" height={24} width={24} />
+          <Image
+            src={gbFlag}
+            alt="Flag of Great Britain"
+            height={24}
+            width={24}
+            className="max-lg:scale-90"
+          />
           GB
         </a>
         <MobileMenu></MobileMenu>

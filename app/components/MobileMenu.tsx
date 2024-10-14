@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import gbFlag from "../assets/gb-flag.svg";
 
 export default function MobileMenu() {
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -68,6 +70,19 @@ export default function MobileMenu() {
             );
           })}
         </ul>
+        <a
+          href="https://flowly-eng.vercel.app/"
+          className="flex items-center gap-1 font-noto text-sm font-light pt-6"
+        >
+          <Image
+            src={gbFlag}
+            alt="Flag of Great Britain"
+            height={24}
+            width={24}
+            className="max-lg:scale-90"
+          />
+          GB
+        </a>
         <div className="flex flex-col-reverse items-center gap-6 pb-10 mt-auto *:transition">
           <a
             href="#"

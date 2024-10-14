@@ -141,7 +141,6 @@ body {
   }
 
   /* HERO SLIDER */
-
   .hero-slider:hover .slider-container {
     animation-play-state: unset;
   }
@@ -157,5 +156,22 @@ body {
 
   .slide img:hover {
     scale: .975;
+  }
+
+  /* TESTIMONIALS */
+  .opinions-container>.opinion-bg {
+    rotate: 1deg;
+  }
+
+  .opinions-container>.opinion-item {
+    rotate: -1deg;
+  }
+
+  .opinions-container:hover>.opinion-bg {
+    rotate: unset;
+  }
+
+  .opinions-container:hover>.opinion-item {
+    rotate: unset;
   }
 }
