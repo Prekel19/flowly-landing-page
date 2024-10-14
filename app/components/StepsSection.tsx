@@ -4,23 +4,23 @@ export default function StepsSection() {
   const steps: { id: number; title: string; description: string }[] = [
     {
       id: 1,
-      title: "Sign up",
+      title: "Załóż konto",
       description: `Create an account to start using our task manager.`,
     },
     {
       id: 2,
-      title: "Create task",
-      description: `Easily add tasks with titles, descriptions, due dates, and priorities.`,
+      title: "Twórz zadania",
+      description: `Łatwo dodawaj zadania z tytułami, opisami, terminami realizacji i priorytetami.`,
     },
     {
       id: 3,
-      title: "Organize task",
-      description: `Group tasks into categories or projects for better organization.`,
+      title: "Organizuj zadania",
+      description: `Grupuj zadania w kategorie lub projekty, aby lepiej zorganizować swoją pracę.`,
     },
     {
       id: 4,
-      title: "Track progress",
-      description: `Monitor the status of your tasks, mark them as completed, and stay up to date.`,
+      title: "Śledź postępy",
+      description: `Monitoruj status swoich zadań, oznaczaj je jako ukończone i bądź na bieżąco.`,
     },
   ];
 
@@ -29,12 +29,13 @@ export default function StepsSection() {
       <div className="relative">
         <div className="flex flex-col gap-6 sticky top-10">
           <h2 className="font-stix text-3xl font-semibold text-center">
-            Discover the power of our product
+            Poznaj potencjał naszego produktu
           </h2>
           <p className="font-noto text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-            enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
-            dolor interdum nulla, ut commodo diam libero vitae erat.
+            Nasze narzędzie zostało zaprojektowane z myślą o efektywności i prostocie.
+            Dzięki zaawansowanym funkcjom i intuicyjnemu interfejsowi, możesz
+            skoncentrować się na realizacji celów, a nie na organizacji pracy. Usprawnij
+            swoje zadania i ciesz się lepszymi wynikami!
           </p>
         </div>
       </div>

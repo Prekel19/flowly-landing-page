@@ -6,24 +6,24 @@ export default function Features() {
   const features: { id: number; title: string; description: string }[] = [
     {
       id: 1,
-      title: "Feature #1",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
-        dolor interdum nulla, ut commodo diam libero vitae erat.`,
+      title: "Intuicyjny interfejs użytkownika",
+      description: `Zarządzaj swoimi zadaniami w prosty i przejrzysty sposób. 
+      Nasz intuicyjny interfejs sprawia, że dodawanie, edytowanie i śledzenie 
+      zadań jest szybkie i przyjemne, co pozwala skupić się na tym, co najważniejsze.`,
     },
     {
       id: 2,
-      title: "Feature #2",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
-        dolor interdum nulla, ut commodo diam libero vitae erat.`,
+      title: "Kategoryzacja zadań",
+      description: `Organizuj swoje zadania według kategorii, priorytetów lub projektów. 
+      Dzięki elastycznym opcjom filtrowania łatwo znajdziesz to, czego potrzebujesz, a 
+      Twoja praca stanie się bardziej uporządkowana i efektywna.`,
     },
     {
       id: 3,
-      title: "Feature #3",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-        enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
-        dolor interdum nulla, ut commodo diam libero vitae erat.`,
+      title: "Współpraca zespołowa",
+      description: `Ułatwiaj współpracę w zespole dzięki możliwości przypisywania zadań i 
+      dzielenia się postępami. Dzięki temu każdy członek zespołu będzie wiedział, co 
+      ma robić, a Ty zyskasz pełną kontrolę nad projektem.`,
     },
   ];
 

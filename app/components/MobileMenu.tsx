@@ -5,18 +5,21 @@ import { useState } from "react";
 
 export default function MobileMenu() {
   const [isActive, setIsActive] = useState<boolean>(false);
-  const tabs: { id: number; name: string }[] = [
+  const tabs: { id: number; name: string; link: string }[] = [
     {
       id: 1,
       name: "Home",
+      link: "home",
     },
     {
       id: 2,
-      name: "Features",
+      name: "Funkcje",
+      link: "features",
     },
     {
       id: 3,
-      name: "Testimonials",
+      name: "Opinie",
+      link: "testimonials",
     },
   ];
 
@@ -70,13 +73,13 @@ export default function MobileMenu() {
             href="#"
             className="flex bg-primary1 text-white items-center py-2 px-6 border border-primary1 rounded-xl hover:bg-secondary1 hover:text-primary1"
           >
-            Create account
+            Stwórz konto
           </a>
           <a
             href="#"
             className="flex items-center py-2 px-6 border border-primary1 rounded-xl hover:bg-primary1 hover:text-white"
           >
-            Log in
+            Zaloguj się
           </a>
         </div>
       </div>

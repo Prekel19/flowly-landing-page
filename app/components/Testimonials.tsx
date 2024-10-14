@@ -11,25 +11,25 @@ export default function Testimonials() {
       id: 1,
       userName: "Alice Johnson",
       userJob: "Marketing Manager",
-      description: `I've tried many task managers, but this one is by far the best! It's intuitive, easy to use, and has all the features I need to stay organized.`,
+      description: `Próbowałem wielu menedżerów zadań, ale ten jest zdecydowanie najlepszy! Jest intuicyjny, łatwy w obsłudze i ma wszystkie funkcje, których potrzebuję, aby pozostać zorganizowanym.`,
     },
     {
       id: 2,
       userName: "John Smith",
       userJob: "Freelancer",
-      description: `I love how I can access my tasks from anywhere, whether I'm on my computer or phone. It has greatly improved my productivity.`,
+      description: `Uwielbiam, że mogę uzyskać dostęp do swoich zadań z każdego miejsca, niezależnie od tego, czy jestem na komputerze, czy na telefonie. To znacznie poprawiło moją produktywność.`,
     },
     {
       id: 3,
       userName: "Emily Davis",
       userJob: "Software Developer",
-      description: `The task manager has helped me prioritize my work effectively. I no longer miss deadlines and can track my progress easily.`,
+      description: `Menedżer zadań pomógł mi skutecznie priorytetyzować moją pracę. Już nie przegapiam terminów i mogę łatwo śledzić swoje postępy.`,
     },
     {
       id: 4,
       userName: "Michael Brown",
       userJob: "Project Manager",
-      description: `I recommend this task manager to anyone looking to streamline their tasks and boost their efficiency. It's a game-changer!`,
+      description: `Polecam ten menedżer zadań każdemu, kto chce uprościć swoje zadania i zwiększyć efektywność. To prawdziwa rewolucja!`,
     },
   ];
 
@@ -39,9 +39,9 @@ export default function Testimonials() {
       className="flex flex-col gap-10 max-w-normal px-16 pt-20 mx-auto max-sm:px-6"
     >
       <div className="flex flex-col items-center">
-        <h2 className="font-stix text-3xl font-semibold">Testimonials</h2>
+        <h2 className="font-stix text-3xl font-semibold">Opinie</h2>
         <p className="font-noto text-center">
-          See what our users have to say about our task manager.
+          Użytkownicy chwalą nasz menedżer zadań za jego funkcjonalność i łatwość obsługi.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">

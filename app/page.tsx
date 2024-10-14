@@ -3,23 +3,27 @@ import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import StepsSection from "./components/StepsSection";
 import Testimonials from "./components/Testimonials";
+import MobileMenu from "./components/MobileMenu";
 import logo from "./assets/logo.png";
 import layeredWavesFooter from "./assets/layered-waves-haikei.svg";
-import MobileMenu from "./components/MobileMenu";
+import gbFlag from "./assets/gb-flag.svg";
 
 export default function Home() {
-  const tabs: { id: number; name: string }[] = [
+  const tabs: { id: number; name: string; link: string }[] = [
     {
       id: 1,
       name: "Home",
+      link: "home",
     },
     {
       id: 2,
-      name: "Features",
+      name: "Funkcje",
+      link: "features",
     },
     {
       id: 3,
-      name: "Testimonials",
+      name: "Opinie",
+      link: "testimonials",
     },
   ];
 
@@ -37,7 +41,7 @@ export default function Home() {
             {tabs.map((tab) => {
               return (
                 <li key={tab.id} className="text-base font-semibold menu-item">
-                  <a href={`#${tab.name.toLocaleLowerCase()}`}>{tab.name}</a>
+                  <a href={`#${tab.link}`}>{tab.name}</a>
                 </li>
               );
             })}
@@ -48,15 +52,22 @@ export default function Home() {
             href="#"
             className="flex bg-primary1 text-white items-center py-2 px-6 border border-primary1 rounded-xl hover:bg-secondary1 hover:text-primary1"
           >
-            Create account
+            Stwórz konto
           </a>
           <a
             href="#"
             className="flex items-center py-2 px-6 border border-primary1 rounded-xl hover:bg-primary1 hover:text-white"
           >
-            Log in
+            Zaloguj się
           </a>
         </div>
+        <a
+          href="#"
+          className="flex items-center gap-1 font-noto text-sm font-light absolute top-2 right-4"
+        >
+          <Image src={gbFlag} alt="Flag of Great Britain" height={24} width={24} />
+          GB
+        </a>
         <MobileMenu></MobileMenu>
       </header>
 

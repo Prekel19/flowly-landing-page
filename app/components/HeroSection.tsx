@@ -14,24 +14,25 @@ export default function HeroSection() {
     <div className="flex flex-col items-center text-center gap-16 pt-12" id="home">
       <div className="flex flex-col items-center gap-4 max-sm:px-4">
         <h1 className="font-stix text-3xl font-semibold">
-          Boost your productivity with our task manager
+          Zwiększ swoją produktywność dzięki naszemu menedżerowi zadań!
         </h1>
         <p className="font-noto">
-          Stay organized and on top of your tasks with our intuitive task manager.
-          Streamline your workflow and never miss a deadline again.
+          Pozostań zorganizowany i na bieżąco z zadaniami dzięki naszemu intuicyjnemu
+          menedżerowi zadań. <br />
+          Usprawnij swój proces pracy i nigdy więcej nie przegap terminu!
         </p>
         <div className="flex font-noto items-center justify-center gap-6 *:transition *:duration-300">
           <a
             href="#"
             className="flex bg-primary1 text-white items-center py-2 px-6 border border-primary1 rounded-xl hover:bg-secondary1 hover:text-primary1"
           >
-            Get started
+            Rozpocznij
           </a>
           <a
-            href="#"
+            href="#features"
             className="flex items-center py-2 px-6 border border-primary1 rounded-xl hover:bg-primary1 hover:text-white"
           >
-            Learn more
+            Dowiedz się więcej
           </a>
         </div>
       </div>

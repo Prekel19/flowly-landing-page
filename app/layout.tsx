@@ -17,7 +17,20 @@ const stixTwoText = STIX_Two_Text({
 
 export const metadata: Metadata = {
   title: "Flowly",
-  description: "Landing page of flowly task manager.",
+  description:
+    "Strona startowa aplikacji, która pomaga w zarządzaniu zadaniami o nazwie Flowly",
+  generator: "Next.js",
+  applicationName: "Flowly",
+  openGraph: {
+    title: "Flowly",
+    description:
+      "Strona startowa aplikacji, która pomaga w zarządzaniu zadaniami o nazwie Flowly",
+    url: "https://flowly-site.vercel.app",
+    siteName: "Flowly",
+    images: "./assets/og-image.png",
+    locale: "pl",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
