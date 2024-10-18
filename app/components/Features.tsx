@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import featuresImg from "../assets/features/working-man-img.png";
+import featuresImg from "../assets/features/working-man-img.webp";
 
 export default function Features() {
   const features: { id: number; title: string; description: string }[] = [
@@ -48,8 +48,6 @@ export default function Features() {
         <Image
           src={featuresImg}
           alt="working man image"
-          width={660}
-          height={460}
           className="rotate-1 w-full"
           priority
         />
