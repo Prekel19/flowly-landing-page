@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Noto_Sans, STIX_Two_Text } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -43,7 +42,6 @@ export default function RootLayout({
         className={`${stixTwoText.variable} ${notoSans.variable} antialiased relative`}
       >
         {children}
-        <SpeedInsights />
       </body>
     </html>
   );
