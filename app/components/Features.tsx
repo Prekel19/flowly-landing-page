@@ -49,7 +49,7 @@ export default function Features() {
           src={featuresImg}
           alt="working man image"
           className="rotate-1 w-full"
-          priority
+          placeholder="blur"
         />
       </div>
     </div>
