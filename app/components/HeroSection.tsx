@@ -11,8 +11,11 @@ export default function HeroSection() {
   const slides: StaticImageData[] = [slide1, slide2, slide3, slide4, slide5, slide6];
 
   return (
-    <div className="flex flex-col items-center text-center gap-16 pt-12" id="home">
-      <div className="flex flex-col items-center gap-4 max-sm:px-4">
+    <div
+      className="flex flex-col items-center text-center gap-16 pt-12 max-sm:gap-20"
+      id="home"
+    >
+      <div className="flex flex-col items-center gap-4 max-sm:px-4 max-sm:gap-6">
         <h1 className="font-stix text-3xl font-semibold">
           Zwiększ swoją produktywność dzięki naszemu menedżerowi zadań!
         </h1>
