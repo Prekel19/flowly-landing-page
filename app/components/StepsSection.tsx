@@ -5,7 +5,7 @@ export default function StepsSection() {
     {
       id: 1,
       title: "Załóż konto",
-      description: `Create an account to start using our task manager.`,
+      description: `Załóż konto i zacznij swoją przygodę.`,
     },
     {
       id: 2,

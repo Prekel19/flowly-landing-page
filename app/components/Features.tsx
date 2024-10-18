@@ -51,6 +51,7 @@ export default function Features() {
           width={660}
           height={460}
           className="rotate-1 w-full"
+          priority
         />
       </div>
     </div>

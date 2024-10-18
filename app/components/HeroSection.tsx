@@ -41,7 +41,14 @@ export default function HeroSection() {
           {slides.map((slide, index) => {
             return (
               <div key={index} className="slide">
-                <Image src={slide} alt="slide photo" width={400} height={400} priority />
+                <Image
+                  src={slide}
+                  alt="slide photo"
+                  width={400}
+                  height={400}
+                  placeholder="blur"
+                  priority
+                />
               </div>
             );
           })}
@@ -50,7 +57,13 @@ export default function HeroSection() {
           {slides.map((slide, index) => {
             return (
               <div key={index} className="slide">
-                <Image src={slide} alt="slide photo" width={400} height={400} />
+                <Image
+                  src={slide}
+                  alt="slide photo"
+                  width={400}
+                  height={400}
+                  placeholder="blur"
+                />
               </div>
             );
           })}

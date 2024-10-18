@@ -23,11 +23,10 @@ export const metadata: Metadata = {
   applicationName: "Flowly",
   openGraph: {
     title: "Flowly",
-    description:
-      "Strona startowa aplikacji, która pomaga w zarządzaniu zadaniami o nazwie Flowly",
+    description: "Flowly to task manager, który pomożę zorganizować ci pracę.",
     url: "https://flowly-site.vercel.app",
     siteName: "Flowly",
-    images: "./assets/og-image.png",
+    images: "/assets/og-image.png",
     locale: "pl",
     type: "website",
   },
