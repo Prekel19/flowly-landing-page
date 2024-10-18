@@ -168,10 +168,10 @@ body {
   }
 
   .opinions-container:hover>.opinion-bg {
-    rotate: unset;
+    rotate: 1deg;
   }
 
   .opinions-container:hover>.opinion-item {
-    rotate: unset;
+    rotate: -1deg;
   }
 }
