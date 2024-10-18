@@ -63,7 +63,7 @@ export default function MobileMenu() {
           {tabs.map((tab) => {
             return (
               <li key={tab.id} className="text-base font-semibold menu-item">
-                <a href={`#${tab.name.toLocaleLowerCase()}`} onClick={toggleMenu}>
+                <a href={`#${tab.link}`} onClick={toggleMenu}>
                   {tab.name}
                 </a>
               </li>
