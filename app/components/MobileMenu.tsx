@@ -3,27 +3,15 @@
 import Image from "next/image";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import { ITabs } from "../models/interface";
 import gbFlag from "../assets/gb-flag.svg";
 
-export default function MobileMenu() {
+interface MobileMenuProps {
+  menuTabs: ITabs[];
+}
+
+export default function MobileMenu({ menuTabs }: MobileMenuProps) {
   const [isActive, setIsActive] = useState<boolean>(false);
-  const tabs: { id: number; name: string; link: string }[] = [
-    {
-      id: 1,
-      name: "Home",
-      link: "home",
-    },
-    {
-      id: 2,
-      name: "Funkcje",
-      link: "features",
-    },
-    {
-      id: 3,
-      name: "Opinie",
-      link: "testimonials",
-    },
-  ];
 
   const toggleMenu = () => {
     setIsActive(!isActive);
@@ -60,9 +48,9 @@ export default function MobileMenu() {
           </div>
         </div>
         <ul className="flex flex-col items-center gap-8 pt-8">
-          {tabs.map((tab) => {
+          {menuTabs.map((tab, index) => {
             return (
-              <li key={tab.id} className="text-base font-semibold menu-item">
+              <li key={index} className="text-base font-semibold menu-item">
                 <a href={`#${tab.link}`} onClick={toggleMenu}>
                   {tab.name}
                 </a>

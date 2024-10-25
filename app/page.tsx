@@ -4,24 +4,22 @@ import Features from "./components/Features";
 import StepsSection from "./components/StepsSection";
 import Testimonials from "./components/Testimonials";
 import MobileMenu from "./components/MobileMenu";
+import { ITabs } from "./models/interface";
 import logo from "./assets/logo.png";
 import layeredWavesFooter from "./assets/layered-waves-haikei.svg";
 import gbFlag from "./assets/gb-flag.svg";
 
 export default function Home() {
-  const tabs: { id: number; name: string; link: string }[] = [
+  const tabs: ITabs[] = [
     {
-      id: 1,
       name: "Home",
       link: "home",
     },
     {
-      id: 2,
       name: "Funkcje",
       link: "features",
     },
     {
-      id: 3,
       name: "Opinie",
       link: "testimonials",
     },
@@ -38,9 +36,9 @@ export default function Home() {
             priority
           />
           <ul className="flex gap-8 max-md:hidden">
-            {tabs.map((tab) => {
+            {tabs.map((tab, index) => {
               return (
-                <li key={tab.id} className="text-base font-semibold menu-item">
+                <li key={index} className="text-base font-semibold menu-item">
                   <a href={`#${tab.link}`}>{tab.name}</a>
                 </li>
               );
@@ -74,7 +72,7 @@ export default function Home() {
           />
           GB
         </a>
-        <MobileMenu></MobileMenu>
+        <MobileMenu menuTabs={tabs}></MobileMenu>
       </header>
 
       <main>
